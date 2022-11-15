@@ -1,0 +1,22 @@
+<h3 class="text-center text-success">List of Data</h3>
+<table style="width:100% ; height:150%;">
+    <style>
+        table, th, td {
+           border: 1px solid black;
+        }
+     </style>
+    <thead>
+      <tr>
+    <th>firstName</th>
+    <th>lastName</th>
+    <th>age</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let People of data">
+      <td>{{People.firstName}}</td>
+      <td>{{People.lastName}}</td>
+      <td>{{People.age}}</td>
+      </tr>
+    </tbody>
+    </table>
